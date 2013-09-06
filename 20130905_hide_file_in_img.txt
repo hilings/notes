@@ -1,0 +1,18 @@
+#   Linux
+
+#   step 1, zip file
+$ zip new.zip file.txt
+
+#   step 2, combine image and file
+$ cat image.jpg file.zip > new.jpg
+
+
+
+
+
+#   Windows
+cmd> copy/b image.jpg + file.zip = new.jpg
+
+
+
+
