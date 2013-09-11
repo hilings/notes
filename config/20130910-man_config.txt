@@ -1,0 +1,38 @@
+#####################################################
+#
+#   config man for user command
+#       updated: 2013-09-10
+#
+#####################################################
+
+take youtube-dl as an example
+
+download the source file from internet
+the folder may contain:
+
+1. binary script: youtube-dl
+2. man page: youtube-dl.1
+
+#####################################################
+# put command to one of your PATH paths
+
+$ cp youtube-dl /usr/local/bin/
+
+    this will enable the youtube-dl command from any directory after restarting shell
+
+#####################################################
+# put man info to one of your man paths
+
+$ cp youtube-dl.1 /usr/local/share/man/man1/
+
+    this will enable man youtube-dl
+    note there are other paths that man info is stored
+    man info is stored in its own format
+
+    on Ubuntu, it's youtube-dl.1.gz
+    on Mac, it's youtube-dl.1
+
+
+#####################################################
+
+
