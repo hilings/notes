@@ -10,6 +10,19 @@ normal user uses bash
 config file is .bash_profile or .bashrc
 
 
+
+
+####
+#   about root shell config
+root shell uses sh
+config file is .profile
+
+
+
+
+
+
+#####################################################
 #   about macvim
 to enable mvim from Terminal command line, define environmet variable VIM_APP_DIR in bash profile to be the path where is macvim.app located
 
@@ -18,11 +31,15 @@ example:
  export VIM_APP_DIR="/Applications/MacVim-snapshot-68/"
 
 
+####
+for root, environment variables are reset
+in order to make "sudo mvim" work, run the following command:
 
-#   about root shell config
-root shell uses sh
-config file is .profile
+ sudo visudo
 
+add the following line
+
+ Defaults    env_keep += "VIM_APP_DIR"
 
 
 
