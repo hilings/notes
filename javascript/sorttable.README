@@ -1,0 +1,5 @@
+#   add class attribute to the table you want to sort
+#   e.g.
+
+<table class="sortable">
+

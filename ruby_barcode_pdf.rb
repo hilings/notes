@@ -59,11 +59,24 @@ end
 
 =begin
 # for rails, render pdf into browser
-respond_to do |format|
-  format.pdf do
-    send_data pdf.render, type: "application/pdf", disposition: "inline"
-  end
-end
+# a few config before render
+# 1. in Gemfile, add
+
+    gem 'prawn'
+    gem 'barby'
+
+# 2. config/initializers/mime_types.rb, add
+
+    Mime::Type.register "application/pdf", :pdf
+
+# 3. in controller, add following:
+
+    respond_to do |format|
+      format.pdf do
+        send_data pdf.render, type: "application/pdf", disposition: "inline"
+      end
+    end
+
 =end
 
 
