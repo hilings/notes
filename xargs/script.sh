@@ -7,7 +7,7 @@ OUTBOX="2013/"
 
 cd "$OUTBOX" || error "failed"
 
-FILE_CONFLICTS=`find . -mount -regextype posix-egrep -maxdepth 2 \( -regex '.*[0-9]{9}\.pdf' -o -not -type f \) -o -print0`
+FILE_CONFLICTS=`find . -mount -regextype posix-egrep -maxdepth 2 \( -regex '.*[0-9]{10}\.pdf' -o -not -type f \) -o -print0`
 
 if [ -n "$FILE_CONFLICTS" ] ; then
     for FILE in $FILE_CONFLICTS; do

@@ -26,3 +26,8 @@ set lines=35    "window height
 if has('gui_running')   "only run for GUI
     colorscheme macvim
 endif
+
+"auto closing curly brace
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O<tab>
+
