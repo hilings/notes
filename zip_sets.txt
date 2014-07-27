@@ -1,0 +1,1 @@
+time zip -r -s 1g zip.zip file.mkv

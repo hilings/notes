@@ -12,6 +12,7 @@ set incsearch   "increase search
 set ai          "auto indenting
 
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType eruby setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType php setlocal ts=4 sw=4 expandtab
 autocmd FileType cpp setlocal ts=4 sw=4 et
 
